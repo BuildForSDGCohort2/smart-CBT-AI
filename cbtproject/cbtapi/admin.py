@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Question
+from .models import Objective
+from .models import Theory
 
 # Register your models here.
-admin.site.register(Question)
+admin.site.register(Objective)
+admin.site.register(Theory)
