@@ -20,3 +20,9 @@ class Result_Theory(models.Model):
 
     def __str__(self):
         return self.score
+
+class Result(models.Model):
+    score = models.IntegerField()
+
+    def __str__(self):
+        return self.score
