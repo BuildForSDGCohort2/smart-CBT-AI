@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "c:\\Users\\Olubusayo Oyekan\\Desktop\\BSDG\\myenv\\Scripts\\python.exe"
+    "python.pythonPath": "c:\\Users\\Olubusayo Oyekan\\Desktop\\BSDG\\myenv\\Scripts\\python.exe",
+    "git.ignoreLimitWarning": true
 }
