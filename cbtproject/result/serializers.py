@@ -8,12 +8,12 @@ from .models import Result
 class Result_ObjSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Result_Obj
-        fields = ('id', 'score', 'question', 'isCorrect')
+        fields = ('question_id', 'score', 'question')
 
 class Result_TheorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Result_Theory
-        fields = ('id', 'score', 'question', 'isCorrect')
+        fields = ('question_id', 'score', 'question')
 
 class ResultSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

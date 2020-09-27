@@ -27,7 +27,7 @@ SECRET_KEY = '!vqw&_pj29k=k)b5qmj5%sah%qohuq#o7f_^9q=38a$loap@$o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['smartcbt.herokuapps.com']
+ALLOWED_HOSTS = ['https://smartcbt.herokuapp.com/']
 
 
 # Application definition

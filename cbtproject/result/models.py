@@ -6,23 +6,21 @@ from cbtapi.models import Objective, Theory
 
 # Create your models here.
 class Result_Obj(models.Model):
-    score = models.IntegerField()
     question = models.ForeignKey(to=Objective, on_delete=models.CASCADE, null=True)
-    isCorrect = models.BooleanField()
+    score = models.IntegerField()
 
-    def __str__(self):
-        return self.score
+    def __int__(self):
+        return self.question
 
 class Result_Theory(models.Model):
-    score = models.IntegerField()
     question = models.ForeignKey(to=Theory, on_delete=models.CASCADE, null=True)
-    isCorrect = models.BooleanField()
+    score = models.IntegerField()
 
-    def __str__(self):
-        return self.score
+    def __int__(self):
+        return self.question
 
 class Result(models.Model):
     score = models.IntegerField()
 
-    def __str__(self):
-        return self.score
+    def __int__(self):
+        return self.question
