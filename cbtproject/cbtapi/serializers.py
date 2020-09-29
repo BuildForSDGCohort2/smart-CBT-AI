@@ -7,5 +7,5 @@ from .models import Theory
 class TheorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Theory
-        fields = ('id', 'question', 'solution', 'answer')
+        fields = ('questionId', 'question', 'solution', 'answer')
         

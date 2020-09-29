@@ -7,7 +7,7 @@ from .models import Result_Theory, Result
 # Create your views here.
 
 class Result_TheoryViewSet(viewsets.ModelViewSet):
-    queryset = Result_Theory.objects.all().order_by('question')
+    queryset = Result_Theory.objects.all().order_by('questionId')
     serializer_class = Result_TheorySerializer
 
 class ResultViewSet(viewsets.ModelViewSet):
