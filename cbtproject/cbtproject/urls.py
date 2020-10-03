@@ -21,3 +21,4 @@ urlpatterns = [
     path('', include('result.urls')),
     path('', include('cbtapi.urls')),
 ]
+

@@ -1,10 +1,11 @@
 # serializers.py
 from rest_framework import serializers
 
-from .models import Question
+from .models import Theory
 
-class QuestionSerializer(serializers.HyperlinkedModelSerializer):
+
+class TheorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Question
-        fields = ('id', 'question', 'solution', 'answers')
-
+        model = Theory
+        fields = ('questionId', 'question', 'solution', 'answer')
+        

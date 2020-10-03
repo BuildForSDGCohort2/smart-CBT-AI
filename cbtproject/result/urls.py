@@ -1,9 +1,10 @@
-# myapi/urls.py
+# result/urls.py
 from django.urls import include, path
 from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
+router.register(r'tresult', views.Result_TheoryViewSet)
 router.register(r'result', views.ResultViewSet)
 
 # Wire up our API using automatic URL routing.
